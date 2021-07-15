@@ -6,6 +6,16 @@
 * ....
 * This will be a Web100500
 
+Even today anybody can create it's own site: buy a hosting for about 5$ per month and also you have to buy some domain, then install WordPress and configure it.
+But nobody will ever visit your site. Only occasional visits from Google search.
+The problems are solved by social network: you see everything that your friends posted in a single place. Domains not needed. And that's for free.
+
+Everybody won't buy a hosting. But everybody have a WiFi router or a friend with router. And we may host websites there.
+Routers are very limited: typical memory from 4 to 16Mb, RAM from 32 to 128Mb, CPU from 400MHz to 800MHz. But personal sites shouldn't be so loaded: norammly people has about [150 stable relationships](https://en.wikipedia.org/wiki/Dunbar%27s_number).
+
+Another problem is connectivity.
+
+
 ## Similar projects or what do we have today
 ### Movements
 [IndieWeb](https://indieweb.org/) is a movement to leave social networks (they call them Silos) and use personal sites.
