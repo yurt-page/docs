@@ -27,34 +27,57 @@ Yurt must provide some advanced website constructor. Without it peoples just wil
 * https://narod.ru/
 * https://wix.com/
 
+### WordPress
+WordPress is a blog engine and most websites in web are running on WordPress.
+It's a very bad software, written in PHP, heavy, has a lot of security vulnarabilities and they always changing it so one day it just become unusable.
+WP uses a database but for Yurt we'll try to avoid it to keep size minimal.
+Yurt Blog may store posts just in raw RSS to make it simpler to generate RSS feed. The same RSS may be fetched by AJAX and then converted to readabe HTML.
+I.e. from UI respective Yurt Blog can be just an in-browser RSS reader.
+BTW WordPress provides RSS feed but for example you can't read it from another site becasue is [blocked by CORS](https://core.trac.wordpress.org/ticket/50441).
+
+### NextCloud
+NextCloud (OwnCloud) is a self hosted "cloud" solution i.e. online disk like Google Phostos and Google Disk.
+You cun upload files like photos and see them from browser or mobile app.
+They are written in PHP which is too heavy for most routers. UI is also not perfect. API is problematic too.
+
+### Why you no host? Because it's hard to configure. Ready to use self-hosting solutions
+[Yunohost](https://yunohost.org/) (sounds like "Why you no host?") is an operation system that you can install to Raspberry Pi and use many apps like Mail or RSS reader from a single dashboard. The dashboard provides SSO authorization so you can open any app without being asked for a password.
+App are well known existing solutions: RoundCube for Email, Wordpress for Blog etc.
+It's a cool idea but it's too heavy for most routers and Yurt must be simpler and more well integrated.
+
+[SandStorm](https://sandstorm.io/) has better integrated apps with a good [secure sandbox model](https://sandstorm.io/how-it-works) and probably Yurt must be just an app in sandstorm. But it also looks too heavy.
+*TBD* investigate it.
+
+Similar projects that provide a ready to use self-host solutions but only for emails:
+* [Mail-in-a-Box](https://mailinabox.email/).
+* [MailCow](https://mailcow.email)
+
+### Raspberry Pi: a single board computer
+Raspberry Pi is an ARM based single board computer that doesn't have a fan and energy effective. 
+Currently a lot of DYI projects uses Pi. It's not so fast as a usual PC but faster than routers.
+You can install a Debian with Python, PHP or Node.JS. So basically every today's sowftware maybe slowly but can be runned on Pi.
+
+Most known project is [Pi-hole](https://pi-hole.net/) Ad Blocking proxy.
+Mozilla WebThings is Python based and also targeted to be runned on Pi.
+
+Yurt must support Pi but since everybody in the World can't buy it we shouldn't be targetted to it as main platform.
+
 ### NAS
 Network Attached Storage (NAS) is a small server with a lot of disk space that you can install at home. Used as a family shared disk to store photos and videos.
 Most popular NAS is Synology that has its own OS called [Disk Station Manager](https://www.synology.com/dsm).
 It has a lot of cool features but not intended to become a social network. 
 Also NAS devices aren't cheap, so we can't tell everybody in the world to buy them to run Yurt.
+Main feature of NAS is a stack of disks: previously you needed a lot of disk to have at least a terabyte in RAID to survive after a disk failure.
 But today you can buy a very cheap disk with few terabytes and just connect via USB to a usual router.
-NAS has more advanced CPU but just for storing files even a router will be enough.
+NAS has more advanced CPU but just for storing files even a router will be enough. Instead of RAID Yurt may backup data to your friend's 
 So I believe NAS devices will be slowly replaced with advanced routers in feature. For example with Turris Omnia.
+
 
 ### Turris Omnia: Router that can be a small server
 [Turris Omnia](https://www.turris.com/en/omnia/overview/) is a most powerful router with a fast CPU that can be used as a NAS.
 It uses OpenWRT and you can easily install other apps like NextCloud.
 
-### NextCloud
-NextCloud (OwnCloud) is a self hosted cloud solution. You cun upload files like photos and see them from browser or mobile app.
-They are written in PHP which is too heavy for most routers. UI is also not perfect. You can extend with some plugins.
-
-### Why you no host? Because it's hard to configure
-[Yunohost](https://yunohost.org/) (sounds like "Why you no host?") is an operation system that you can install to Raspberry Pi and use many apps like Mail or RSS reader from a single dashboard. The dashboard provides SSO authorization so you can open any app without being asked for a password.
-App are well known existing solutions: RoundCube for Email, Wordpress for Blog etc.
-It's a cool idea but it's too heavy for most routers and Yurt must be simpler and more well integrated.
-
-[SandStorm](https://sandstorm.io/) has better integrated apps and probably Yurt must be just an app in sandstorm. But it also looks too heave.
-*TBD* investigate it.
-
-Similar projects that provide a ready to use solution:
-* [Mail-in-a-Box](https://mailinabox.email/) is a preconfigured tools for email.
-* [MailCow](https://mailcow.email)
+A similar router with fast CPU and OpenWRT is the [GL.net Brume](https://www.gl-inet.com/products/gl-mv1000/)
 
 ## Email
 EMail is a corner stone of web and it's important to give users and ability to send and receive them. You may not have anything except of email.
@@ -72,4 +95,5 @@ We must provide at least ability to receive email. This will already cover 98% o
 Simplest SMTP server even without TLS will work perfectly.
 But how to read received mails?
 The simplest way to read them from MUA may download raw eml files (e.g. via sftp) and read it as from a local folder.
+Or we may add a POP server. But it may be better to use lightweight JMAP but maybe we even can change it slightly to use JSON-RPC.
 
