@@ -51,6 +51,7 @@ It's a cool idea but it's too heavy for most routers and Yurt must be simpler an
 Similar projects that provide a ready to use self-host solutions but only for emails:
 * [Mail-in-a-Box](https://mailinabox.email/).
 * [MailCow](https://mailcow.email)
+* https://github.com/awesome-selfhosted/awesome-selfhosted ful list
 
 ### Raspberry Pi: a single board computer
 Raspberry Pi is an ARM based single board computer that doesn't have a fan and energy effective. 
