@@ -45,11 +45,16 @@ NextCloud (OwnCloud) is a self hosted cloud solution. You cun upload files like 
 They are written in PHP which is too heavy for most routers. UI is also not perfect. You can extend with some plugins.
 
 ### Why you no host? Because it's hard to configure
-[Yunohost](https://yunohost.org/) (sounds like "Why you no host?") is an operation system that you can install to Raspberry Pi and use many apps like Mail or RSS reader from a single dashboard.
-It's too heavy for routers and Yurt must be simpler and more well integrated.
-There is a of other similar projects that tries to provide a ready to use solution.
-[SandStorm](https://sandstorm.io/) is more simple but better integrated.
-[Mail-in-a-Box](https://mailinabox.email/) is a preconfigured tools for email.
+[Yunohost](https://yunohost.org/) (sounds like "Why you no host?") is an operation system that you can install to Raspberry Pi and use many apps like Mail or RSS reader from a single dashboard. The dashboard provides SSO authorization so you can open any app without being asked for a password.
+App are well known existing solutions: RoundCube for Email, Wordpress for Blog etc.
+It's a cool idea but it's too heavy for most routers and Yurt must be simpler and more well integrated.
+
+[SandStorm](https://sandstorm.io/) has better integrated apps and probably Yurt must be just an app in sandstorm. But it also looks too heave.
+*TBD* investigate it.
+
+Similar projects that provide a ready to use solution:
+* [Mail-in-a-Box](https://mailinabox.email/) is a preconfigured tools for email.
+* [MailCow](https://mailcow.email)
 
 ## Email
 EMail is a corner stone of web and it's important to give users and ability to send and receive them. You may not have anything except of email.
