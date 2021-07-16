@@ -1,6 +1,6 @@
 # Yurt Page: own website for everybody on Earth and other planets
 
-* Web1.0: peoples just readers of others sites: news, books
+* Web1.0: peoples just readers of others sites: news, books, portals like MSN
 * Web2.0: peoples now can create their own content and interact with each others: Wiki, YouTybe, Facebook
 * Web3.0: nobody knows but all talking about BlockChain, AI, VR and other buzzwords.
 * ....
@@ -18,6 +18,7 @@ Another problem is connectivity.
 
 ## Similar projects or what do we have today
 ### Movements
+#### IndieWeb
 [IndieWeb](https://indieweb.org/) is a movement to leave social networks (they call them Silos) and use personal sites.
 They're working on creation of easy to use small website engines, technologies and standards to simplify websites to interact with each others.
 For example [WebMention](https://indieweb.org/Webmention) protocol allows to easily see when someone makes repost from your site.
@@ -26,6 +27,13 @@ For example [WebMention](https://indieweb.org/Webmention) protocol allows to eas
 * https://github.com/pfefferle/awesome-indieweb
 
 Yurt is not related to IndieWeb because ideologically is different (we are fine with some centralization) and almost nothing can't be reused from technology stack. But we'll try to align with this movement.
+
+#### Freifunk
+[Freifunk](https://en.wikipedia.org/wiki/Freifunk) is a communty-driven radio network in Germany.
+They developed the OpenWRT for their needs.
+
+#### prpl Foundation 
+[prpl Foundation ](https://prplfoundation.org/) is an attempt to collaborate between network equipment manufactures and network providers to create an OpenWRT based platform and use it instead of unknown and unsecure routers firmware.
 
 ### Site constructors
 MySpace was probably the first popular personal websites hosting. But all users made their own design that sometimes looks terrible.
@@ -37,7 +45,8 @@ Yurt must provide some advanced website constructor. Without it peoples just wil
 * https://narod.ru/
 * https://wix.com/
 
-### WordPress
+### Software
+#### WordPress
 WordPress is a blog engine and most websites in web are running on WordPress.
 It's a very bad software, written in PHP, heavy, has a lot of security vulnarabilities and they always changing it so one day it just become unusable.
 WP uses a database but for Yurt we'll try to avoid it to keep size minimal.
@@ -45,8 +54,8 @@ Yurt Blog may store posts just in raw RSS to make it simpler to generate RSS fee
 I.e. from UI respective Yurt Blog can be just an in-browser RSS reader.  
 BTW WordPress provides RSS feed but for example you can't read it from another site becasue is [blocked by CORS](https://core.trac.wordpress.org/ticket/50441).
 
-### NextCloud
-NextCloud (OwnCloud) is a self hosted "cloud" solution i.e. online disk like Google Phostos and Google Disk.
+#### NextCloud
+NextCloud is a self hosted "cloud" solution i.e. online disk like Google Phostos and Google Disk.
 You cun upload files like photos and see them from browser or mobile app.  
 They are written in PHP which is too heavy for most routers. UI is also not perfect. API is problematic too.
 
@@ -55,15 +64,14 @@ They are written in PHP which is too heavy for most routers. UI is also not perf
 App are well known existing solutions: RoundCube for Email, Wordpress for Blog etc.
 It's a cool idea but it's too heavy for most routers and Yurt must be simpler and more well integrated.
 
-[SandStorm](https://sandstorm.io/) has better integrated apps with a good [secure sandbox model](https://sandstorm.io/how-it-works) and probably Yurt must be just an app in sandstorm. But it also looks too heavy.
+[SandStorm](https://sandstorm.io/) has better integrated apps with a good [secure sandbox model](https://sandstorm.io/how-it-works) and probably Yurt must be just an app in sandstorm. But it also looks too heavy.  
 *TBD* investigate it.
 
-Similar projects that provide a ready to use self-host solutions but only for emails:
-* [Mail-in-a-Box](https://mailinabox.email/).
-* [MailCow](https://mailcow.email)
-* https://github.com/awesome-selfhosted/awesome-selfhosted ful list
+There is a lot of similar projects that provide a ready to use self-host solutions.  
+See [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted#self-hosting-solutions)
 
-### Raspberry Pi: a single board computer
+### Devices
+#### Raspberry Pi: a single board computer
 Raspberry Pi is an ARM based single board computer that doesn't have a fan and energy effective. 
 Currently a lot of DYI projects uses Pi. It's not so fast as a usual PC but faster than routers.  
 You can install a Debian with Python, PHP or Node.JS. So basically every today's sowftware maybe slowly but can be runned on Pi.
@@ -73,7 +81,7 @@ Mozilla WebThings is Python based and also targeted to be runned on Pi.
 
 Yurt must support Pi but since everybody in the World can't buy it we shouldn't be targetted to it as main platform.
 
-### NAS
+#### NAS
 Network Attached Storage (NAS) is a small server with a lot of disk space that you can install at home. Used as a family shared disk to store photos and videos.
 Most popular NAS is Synology that has its own OS called [Disk Station Manager](https://www.synology.com/dsm).
 It has a lot of cool features but not intended to become a social network. 
@@ -84,17 +92,17 @@ But today you can buy a very cheap disk with few terabytes and just connect via 
 NAS has more advanced CPU but just for storing files even a router will be enough. Instead of RAID Yurt may backup data to your friend's 
 So I believe NAS devices will be slowly replaced with advanced routers in feature. For example with Turris Omnia.
 
-
-### Turris Omnia: Router that can be a small server
+#### Turris Omnia: Router that can be a small server
 [Turris Omnia](https://www.turris.com/en/omnia/overview/) is a most powerful router with a fast CPU that can be used as a NAS.
 It uses OpenWRT and you can easily install other apps like NextCloud.  
 A similar router with fast CPU and OpenWRT is the [GL.net Brume](https://www.gl-inet.com/products/gl-mv1000/)
+
 
 ## Email
 EMail is a corner stone of web and it's important to give users and ability to send and receive them. You may not have anything except of email.
 A good news is that EMail is already non-centralized. But it's too hard to use and especially hard to configure.
 But most users for personal needs using silos: GMail, Hotmail, Yahoo, Yandex, iCloud. They have good anti spam filters but they're selling their users. Most users using http to check mail.
-Others using corporate email from their job or universities. They are mostly use MUA (Outlook, Thunderbird) but sometimes corporate email is based on silos (Office365).
+Others using corporate email from their job or universities. They are mostly use MUA (Outlook, Thunderbird) but sometimes corporate email is based on silos (Microsoft Office 365).
 Small amount of regular users using email from their internet provider (GMX) because they already have it.
 Advanced users buys paid email services: Proton Mail, FastMail, Zoho.
 
