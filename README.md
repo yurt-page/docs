@@ -80,6 +80,7 @@ Browser on PC | 1         | 2GB   | 50MB  | Chrome workers. Open tab, install ap
 Laptop        | 2         | 8GB   | 200GB | Windows
 TV/TV box     | 2         | 4GB   | 8GB   | AndroidTV. We may use Termux
 Phone         | 2         | 8GB   | 128GB | Android. We may use Termux
+NAS           | 1         | 8GB   | 2TB   | Proprietary Linux (Disk Station), TrueNAS, Docker
 Raspberry Pi  | 1         | 8GB   | 8GB   | Debian
 Router        | 0.5       | 128MB | 16MB  | OpenWRT, Linksys Linux
 STM32         | 0.1       | 2MB   | 4MB   |
