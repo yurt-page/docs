@@ -64,13 +64,25 @@ They are written in PHP which is too heavy for most routers. UI is also not perf
 App are well known existing solutions: RoundCube for Email, Wordpress for Blog etc.
 It's a cool idea but it's too heavy for most routers and Yurt must be simpler and more well integrated.
 
-[SandStorm](https://sandstorm.io/) has better integrated apps with a good [secure sandbox model](https://sandstorm.io/how-it-works) and probably Yurt must be just an app in sandstorm. But it also looks too heavy.  
-*TBD* investigate it.
+[SandStorm](https://sandstorm.io/) has better integrated apps with a good [secure sandbox model](https://sandstorm.io/how-it-works) based on Linux containers and probably Yurt must be just an app in sandstorm. But it also too heavy for a regular routers and doesn't have a social component.  
 
 There is a lot of similar projects that provide a ready to use self-host solutions.  
 See [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted#self-hosting-solutions)
 
 ### Devices
+
+Hosting type  | CPU cores | RAM   | Disk  |  OS
+--------------|-----------|-------|-------|-----
+PC            | 4         | 16GB  | 1TB   | Most of them use Windows for games, in USA MacOS is also popular. We may use Docker. Important to have a tray icon.
+Browser on PC | 1         | 2GB   | 50MB  | Chrome workers. Open tab, install app or extension
+Laptop        | 2         | 8GB   | 200GB | Windows
+TV/TV box     | 2         | 4GB   | 8GB   | AndroidTV. We may use Termux
+Phone         | 2         | 8GB   | 128GB | Android. We may use Termux
+Raspberry Pi  | 1         | 8GB   | 8GB   | Debian
+Router        | 0.5       | 128MB | 16MB  | OpenWRT, Linksys Linux
+STM32         | 0.1       | 2MB   | 4MB   |
+
+
 #### Raspberry Pi: a single board computer
 Raspberry Pi is an ARM based single board computer that doesn't have a fan and energy effective. 
 Currently a lot of DYI projects uses Pi. It's not so fast as a usual PC but faster than routers.  
@@ -94,8 +106,9 @@ So I believe NAS devices will be slowly replaced with advanced routers in featur
 
 #### Turris Omnia: Router that can be a small server
 [Turris Omnia](https://www.turris.com/en/omnia/overview/) is a most powerful router with a fast CPU that can be used as a NAS.
-It uses OpenWRT and you can easily install other apps like NextCloud.  
-A similar router with fast CPU and OpenWRT is the [GL.net Brume](https://www.gl-inet.com/products/gl-mv1000/)
+It uses OpenWRT and you can easily install other apps like NextCloud.
+This router is a first attemt to make a special device for a self hosting: it support LXC containers out of the box and regular users may install a lot of things with just a single click.
+A similar router with fast CPU and OpenWRT is the [GL.net Brume](https://www.gl-inet.com/products/gl-mv1000/) but it doesn't have such focus on self hosting.
 
 
 ## Email
