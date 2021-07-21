@@ -1,4 +1,5 @@
 # Yurt Page: own website for everybody on Earth and other planets
+Yurt is a small house used my nomads. You can easily construct it.
 
 * Web1.0: peoples just readers of others sites: news, books, portals like MSN
 * Web2.0: peoples now can create their own content and interact with each others: Wiki, YouTybe, Facebook
@@ -73,6 +74,7 @@ See [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhoste
 
 Hosting type  | CPU cores | RAM   | Disk  |  OS
 --------------|-----------|-------|-------|-----
+VPC           | 2         | 16GB  | 512GB | Linux
 PC            | 4         | 16GB  | 1TB   | Most of them use Windows for games, in USA MacOS is also popular. We may use Docker. Important to have a tray icon.
 Browser on PC | 1         | 2GB   | 50MB  | Chrome workers. Open tab, install app or extension
 Laptop        | 2         | 8GB   | 200GB | Windows
