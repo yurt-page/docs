@@ -1,7 +1,8 @@
-# Yurt Page: own website for everybody on Earth and other planets
+# Yurt Page: own home page website for everybody on Earth and other planets
 Yurt is a small house used my nomads. You can easily construct it.
+Yurt Page is a small home page that yiu can deploy on your home devices.
 
-* Web1.0: peoples just readers of others sites: news, books, portals like MSN
+* Web1.0: peoples just readers of others sites: news, books, portals like Yahoo or MSN.
 * Web2.0: peoples now can create their own content and interact with each others: Wiki, YouTybe, Facebook
 * Web3.0: nobody knows but all talking about BlockChain, AI, VR and other buzzwords.
 * ....
@@ -83,7 +84,7 @@ Phone         | 2         | 8GB   | 128GB | Android. We may use Termux
 NAS           | 1         | 8GB   | 2TB   | Proprietary Linux (Disk Station), TrueNAS, Docker
 Raspberry Pi  | 1         | 8GB   | 8GB   | Debian
 Router        | 0.5       | 128MB | 16MB  | OpenWRT, Linksys Linux
-STM32         | 0.1       | 2MB   | 4MB   |
+STM32         | 0.1       | 2MB   | 4MB   | Tasmota
 
 
 #### Raspberry Pi: a single board computer
@@ -132,3 +133,22 @@ But how to read received mails?
 The simplest way to read them from MUA may download raw eml files (e.g. via sftp) and read it as from a local folder.
 Or we may add a POP server. But it may be better to use lightweight JMAP but maybe we even can change it slightly to use JSON-RPC.
 
+## Blog
+* RSS must be supported. Only it gives a real freedom for readers. In fact only RSS will be enough to make life better for most peoples.
+* The blog itself may be just an online RSS reader. I.e. you can read your own blog the same as any other.
+* Multiple authors aren't necessary. We may have a very simple access list model.
+* Fiendly SEO is very wanted but not so important than everything else. I.e not generate of pure HTML to be indexed. We may instead create some aggregator/proxy or maje our own "blog search" as Yandex.Blogs.
+* Comments must be developed even better than posts: discussions are the main focus. Comments on habr.com are much valuable than post.
+* But for some posts comments may be just dosabled like in Telegram Channels. Such posts must have a different type like Note.
+* So we must support different types of posts: articles (translable and searchable), notes (not searchable), gists (not published in feed but searchable) etc. 
+* Stats must be as good as possible (countries, unique readers, read time etc) but in the same time we must value users privacy (do not use or leak third party data). Otherwise users may start to use Google Analytics or other even worst spying systems. But some websites like e-commerce for marketing still needs more stats. We are fine to create own tracking system (at least we are not evil yet).
+* Cross posting is very important. We must allow to publish to Twitter, FB, anyting else.
+* We must also be friendly for crossposting and support OData.
+* Subscribe via email will be very nice. XMPP/Web/Telegram push.
+* To minimize space and optimize speed we may store posts directly in RSS but each post separately. We are free to extend RSS with our elements like comments.
+* Support for git/markdown static generators. We may create a plugin for Jekyl/Hugo.
+* Maybe we can add a versioning and send only diffs on editing.
+* Very basic WYSIWYG editor and use Markdown. But on saving convert MD to HTML/RSS.
+* For API we may try to use AtomPub or even use raw WebDAV PUT.
+* We must gzip post content on client before sending. Thus we'll save resources on router.
+* Spam Protection is the hardest thing to do
