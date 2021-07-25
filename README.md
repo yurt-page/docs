@@ -17,6 +17,13 @@ Routers are very limited: typical memory from 4 to 16Mb, RAM from 32 to 128Mb, C
 
 Another problem is connectivity.
 
+Problems:
+1. Not everybody has a router. But almost all has a friend or friend of friend with a router. For sure  We may store credentials on central server.
+2. Router can be 
+   1. breaked: your data is lost. We must backup as much as possible but the dencyption key must be stored on central server.
+   2. stolen: your data will be lost but the thrieft can also read it. We can keep the descryption key in memory so on reboot it will be lost.
+   3. hacked: ...we fucked up here. But! We may do many things as possible to minimise impact: for delete files only some long period (including backup files). 
+4. 
 
 ## Similar projects or what do we have today
 ### Movements
