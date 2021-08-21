@@ -159,3 +159,6 @@ Or we may add a POP server. But it may be better to use lightweight JMAP but may
 * For API we may try to use AtomPub or even use raw WebDAV PUT.
 * We must gzip post content on client before sending. Thus we'll save resources on router.
 * Spam Protection is the hardest thing to do
+
+
+https://github.com/LukeSmithxyz/lb
