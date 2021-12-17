@@ -8,6 +8,8 @@ Yurt Page is a small home page that yiu can deploy on your home devices.
 * ....
 * This will be a Web100500
 
+https://twitter.com/marinintim/status/1471480630445813760
+
 Even today anybody can create it's own site: buy a hosting for about 5$ per month and also you have to buy some domain, then install WordPress and configure it.
 But nobody will ever visit your site. Only occasional visits from Google search.
 The problems are solved by social network: you see everything that your friends posted in a single place. Domains not needed. And that's for free.
