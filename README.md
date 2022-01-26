@@ -1,6 +1,6 @@
 # Yurt Page: own home page website for everybody on Earth and other planets
 Yurt is a small house used my nomads. You can easily construct it.
-Yurt Page is a small home page that yiu can deploy on your home devices.
+Yurt Page is a small home page that you can deploy on your home devices.
 
 * Web1.0: peoples just readers of others sites: news, books, portals like Yahoo or MSN.
 * Web2.0: peoples now can create their own content and interact with each others: Wiki, YouTube, Facebook
