@@ -15,3 +15,5 @@ Modern but static files only:
 Mature but not well known:
 * yaws
 * cherokee
+
+[How to easily start a webserver in any folder?](https://askubuntu.com/questions/377389/how-to-easily-start-a-webserver-in-any-folder/1256550#1256550)
