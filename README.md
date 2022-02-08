@@ -17,7 +17,7 @@ The problems are solved by social network: you see everything that your friends 
 Everybody won't buy a hosting. But everybody has a WiFi router or a friend with router. And we may host websites there.
 Routers are very limited: typical memory from 4 to 16Mb, RAM from 32 to 128Mb, CPU from 400MHz to 800MHz. But personal sites shouldn't be so loaded: normally people has about [150 stable relationships](https://en.wikipedia.org/wiki/Dunbar%27s_number).
 
-Another problem is connectivity.
+Another problem is connectivity. The [pagekite](https://pagekite.net/home/), [CloudFlare](https://www.cloudflare.com/products/tunnel/), [localhost.run](https://localhost.run/), ngrok.
 
 Problems:
 1. Not everybody has a router. But almost all has a friend or friend of friend with a router. For sure  We may store credentials on central server.
@@ -81,7 +81,7 @@ It's a cool idea, but it's too heavy for most routers and Yurt must be simpler a
 [SandStorm](https://sandstorm.io/) has better integrated apps with a good [secure sandbox model](https://sandstorm.io/how-it-works) based on Linux containers and probably Yurt must be just an app in sandstorm. But it also too heavy for a regular routers and doesn't have a social component.  
 
 There is a lot of similar projects that provide a ready to use self-host solutions.  
-See [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted#self-hosting-solutions)
+See [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted#self-hosting-solutions) and [Alternative Internet](https://github.com/redecentralize/alternative-internet)
 
 ### Devices
 
