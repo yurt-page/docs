@@ -10,7 +10,7 @@ Yurt Page is a small home page that you can deploy on your home devices.
 
 https://twitter.com/marinintim/status/1471480630445813760
 
-Even today anybody can create its own site: buy a hosting for about 5$ per month, and also you have to buy some domain, then install WordPress and configure it.
+Even today anybody can create its own site: buy a hosting for about 5$ per month, and also you have to buy some domain, then install WordPress blog engine and configure it.
 But nobody will ever visit your site. Only occasional visits from Google search.
 The problems are solved by social network: you see everything that your friends posted in a single place. Domains not needed. And that's for free.
 
@@ -81,7 +81,7 @@ It's a cool idea, but it's too heavy for most routers and Yurt must be simpler a
 [SandStorm](https://sandstorm.io/) has better integrated apps with a good [secure sandbox model](https://sandstorm.io/how-it-works) based on Linux containers and probably Yurt must be just an app in sandstorm. But it also too heavy for a regular routers and doesn't have a social component.  
 
 There is a lot of similar projects that provide a ready to use self-host solutions.  
-See [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted#self-hosting-solutions) and [Alternative Internet](https://github.com/redecentralize/alternative-internet)
+See [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted#self-hosting-solutions), [Alternative Internet](https://github.com/redecentralize/alternative-internet) and [Awesome Piracy](https://github.com/Igglybuff/awesome-piracy)
 
 ### Devices
 
@@ -146,6 +146,8 @@ The simplest way to read them from MUA may download raw eml files (e.g. via sftp
 Or we may add a POP server. But it may be better to use lightweight JMAP but maybe we even can change it slightly to use JSON-RPC.
 
 ## Blog
+See [yurt-blog](https://github.com/yurt-page/yurt-blog) engine
+
 * RSS must be supported. Only it gives real freedom for readers. In fact only RSS will be enough to make life better for most peoples.
 * The blog itself may be just an online RSS reader. I.e. you can read your own blog the same as any other.
 * Multiple authors aren't necessary. We may have a very simple access list model.
@@ -170,25 +172,4 @@ https://github.com/LukeSmithxyz/lb
 
 ## HTTP Web Servers
 The main target devices for Yurt are routers with OpenWRT that uses uhttpd, other routers that uses LigHttpd, AndroidTV devices that may use Termux+Busybox HTTPD or LigHttpd or even some specialized Android app for the Yurt.
-
-For many regular users it may be too complicated to install a web server to run a yurt on their desktop computer. But this is an extremely important to support because desktop PC has a lot of storage and a really good CPU. This will be really needed for photos backup.
-In fact, we have few options by implementation difficulty level:
-1. Use an existing Web Servers and provide instructions how to configure Yurt.
-2. Provide an installer that will set up the Yurt with one of the existing web server.
-3. Create a Yurt as a separate program with an embedded webserver. This will give more independence and an ability to move faster but this also means that Yurt must always provide updates especially with security fixes.
-
-We must start with the first option as an easier to begin with. Most target users of Yurt using Windows, macOS is too expensive for most peoples and Linux users... they know better how to install and use Yurt.
-
-The baseline for Yurt is a BusyBox HTTPD because this is the most lightweight and widely deployed web server. Almost all Ubuntu have it pre-installed.
-
-
-Windows:
-* [MicroSoft IIS](https://www.iis.net/) relatively easy to install and has some GUI configuration. Supports WebDAV. May be challenging to use it.
-* [XAMP](https://www.apachefriends.org/en/index.html) Apache + MariaDB + PHP and hase some Control Panel GUI. Easy to install, we may skip everything except of Apache, but even it is too heavy.
-* [Open Server Panel](https://ospanel.io/) More advanced installer. Overkill but it supports Nginx. Nginx or any other webservers are too heavy and harder to configure.
-* Tomcat: needs Java, slow, but (potentially) safer. Maybe we may create some GUI based on Jetty.
-* [BusyBox W32](https://frippery.org/busybox/) may be good solution for us, but it doesn't have any GUI.
-* [Miranda IM + HTTPServer plugin](https://github.com/miranda-ng/miranda-ng/tree/master/plugins/HTTPServer) surprisingly but this is one of the most easy to use solution. It even supports UPNP port forwarding (but no NAT-PMP/PCP). It even has some default website template that allows to see directory listing. It doesn't support CGI and needs to be revisited and improved. One good thing about it is that many users remember Miranda. It is also very lightweight and can be used to set up a Jabber/XMPP account.
-* [200 OK  Server Chrome Plugin](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb) a simple webserver that is very easy to install for experienced users. No CGI but has UPNP port forwarding (but no NAT-PMP/PCP). Maybe this is the only option for Chromebook.
-* [Fenix Web Server](http://fenixwebserver.com/) looks good and supports MacOS. We must at least try to support it.
-* Many shareware programs like [HFS](https://en.wikipedia.org/wiki/HTTP_File_Server). It's simply not safe, and they anyway won't support CGI.
+See [Web Servers](webservers.md)
