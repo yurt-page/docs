@@ -39,6 +39,8 @@ For example [WebMention](https://indieweb.org/Webmention) protocol allows to eas
 
 Yurt is not related to IndieWeb because ideologically is different (we are fine with some centralization) and almost nothing can't be reused from technology stack. But we'll try to align with this movement.
 
+[unhosted web apps](http://unhosted.org/) also is a good resource
+
 #### Freifunk
 [Freifunk](https://en.wikipedia.org/wiki/Freifunk) is a community-driven radio network in Germany.
 They developed the OpenWRT for their needs.
