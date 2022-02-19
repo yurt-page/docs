@@ -1,6 +1,8 @@
 * https://localhost.run/ ssh tunnel. Here is some details about internals https://medium.com/localhost-run/localhost-run-the-origin-story-5aeaf5692dee 
 * https://pagekite.net/ a special lightweight tunnel. One of the oldest. Has openwrt packages. Allows to deploy onw instance (frontend). See https://www.youtube.com/watch?v=SRhK05KjxYA and https://www.youtube.com/watch?v=23BS7kdQMzw
 * https://ngrok.com/ one of the most popular. Needs for own client.
+* https://github.com/sleirsgoevy/ngrok-free ngrok v2 clone
+* https://github.com/azimjohn/jprq ngrok alternative
 * https://www.cloudflare.com/products/tunnel/ CloudFlare tunnel (Argo)
 * https://localxpose.io/ very powerful tunnels and reverse proxy with many options and also a market
 * https://webhookrelay.com/
