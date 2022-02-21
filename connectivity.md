@@ -15,9 +15,9 @@ It must be not a VPN but also simple SOCKS is not good here. So such tunneling s
 
 Here is a list (hope not complete) of such proxies services:
 * https://localhost.run/ ssh tunnel. Here is some details about internals https://medium.com/localhost-run/localhost-run-the-origin-story-5aeaf5692dee 
-* https://pagekite.net/ a special lightweight tunnel. One of the oldest. Has openwrt packages. Allows to deploy own instance (frontend). See https://www.youtube.com/watch?v=SRhK05KjxYA and https://www.youtube.com/watch?v=23BS7kdQMzw
+* https://pagekite.net/ a special lightweight tunnel. One of the oldest. Has openwrt packages. Allows to deploy own instance (frontend). See [PageKite intro](https://www.youtube.com/watch?v=SRhK05KjxYA) and [Accessing your Mbed device from anywhere using Pagekite How to create a Mbed library for Pagekite](https://www.youtube.com/watch?v=23BS7kdQMzw)
 * https://ngrok.com/ one of the most popular. Needs for own client. First version was published on GitHub but seconds version is closed. Written in Go, quite heavy for routers.
-* https://github.com/sleirsgoevy/ngrok-free ngrok v2 clone
+* https://github.com/sleirsgoevy/ngrok-free ngrok v2 clone (reverse engineered)
 * https://github.com/azimjohn/jprq ngrok alternative using WebSockets
 * https://www.cloudflare.com/products/tunnel/ CloudFlare tunnel (Argo)
 * https://localxpose.io/ very powerful tunnels and reverse proxy with many options and also a market
