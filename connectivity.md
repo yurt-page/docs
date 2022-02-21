@@ -1,8 +1,24 @@
+# Expose web server without a public IP address
+
+If your web server doesn't have a public IP address e.g. behind NAT then it can't be accessd from internet.
+So you need some public proxy that your sevrer will connect to and the proxy will redirect incoming request to your server.
+Usually such proxies also gives you an uniq subdomain and can enable HTTPS for you.
+
+Here many problems arise:
+1. The proxy has bandwith limits
+2. HTTPS termination on proxy means that the proxy can read traffic
+3. Subdomains may set a cookie to a parent domain
+4. The biggest problem is to avoid botnets and fishing sites.
+
+Tecnically speaking the tunnel between server and proxy is not so easy to implement.
+It must be not a VPN but also simple SOCKS is not good here. So such tunneling services uses protocols like port forward over SSH or specialized multiplexing protocols.
+
+Here is a list (hope not complete) of such proxies services:
 * https://localhost.run/ ssh tunnel. Here is some details about internals https://medium.com/localhost-run/localhost-run-the-origin-story-5aeaf5692dee 
-* https://pagekite.net/ a special lightweight tunnel. One of the oldest. Has openwrt packages. Allows to deploy onw instance (frontend). See https://www.youtube.com/watch?v=SRhK05KjxYA and https://www.youtube.com/watch?v=23BS7kdQMzw
-* https://ngrok.com/ one of the most popular. Needs for own client.
+* https://pagekite.net/ a special lightweight tunnel. One of the oldest. Has openwrt packages. Allows to deploy own instance (frontend). See https://www.youtube.com/watch?v=SRhK05KjxYA and https://www.youtube.com/watch?v=23BS7kdQMzw
+* https://ngrok.com/ one of the most popular. Needs for own client. First version was published on GitHub but seconds version is closed. Written in Go, quite heavy for routers.
 * https://github.com/sleirsgoevy/ngrok-free ngrok v2 clone
-* https://github.com/azimjohn/jprq ngrok alternative
+* https://github.com/azimjohn/jprq ngrok alternative using WebSockets
 * https://www.cloudflare.com/products/tunnel/ CloudFlare tunnel (Argo)
 * https://localxpose.io/ very powerful tunnels and reverse proxy with many options and also a market
 * https://webhookrelay.com/
@@ -19,4 +35,4 @@
 * https://www.ultrahook.com/ Receive webhooks on localhost
 * https://forwardhq.com/ not works anymore
 * [serveo.net](https://github.com/u1i/tools/blob/master/serveo.md) ssh tunnel, not works anymore
-* https://progsoft.net/en/software/pagekite
+* https://progsoft.net/en/software/pagekite other related software.
