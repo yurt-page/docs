@@ -6,8 +6,9 @@ Yurt is a small house that is easy to construct.
 
 <img alt="Yurt near Issyk-Kul lake" width="320px" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/4/4f/YurtIssykFamily.jpg" src="https://camo.githubusercontent.com/69dd1b0c82aae39cf6322bde1384952e3fc7c23bdac2e15967ea794adf7eefea/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f342f34662f59757274497373796b46616d696c792e6a7067"/>
 
-The YurtPage is a small homepage that all people can deploy on their own devices like router, Raspberry Pi, PC or even TV.
+The YurtPage is a small homepage that all people can deploy on their own devices like router, Raspberry Pi, PC or even TV. Mainly routers because almost everybody have them and they consume small electricity and are always on.
 So you don't need to pay for hosting.
+
 The main goal is to make a self hosted website as cheap as possible and typical usage is to have a closed family storage of photos or a small blog.
 
 If you have friends with a YurtPage then your data will be encrypted and stored on their devices and this gives you a backup for free.
@@ -24,14 +25,16 @@ This architecture improves privacy but also makes the internet more distributed 
 > I don’t know what Web3 would be based on, but Web4 would be based on HTML and cgi-bin.
 > — [Albert Einstein](https://twitter.com/marinintim/status/1471480630445813760)
 
-And that's exactly what Yurt uses :) That's esseintal technologies that may work on a smallest devices.
+And that's exactly what Yurt uses :) That's essential technologies that may work on the smallest devices.
 
-Basically for the Yurt the terminology is not applied at all.
+Basically for the Yurt the terminology is not applied at all. Security, privacy and censorship resistance are cool but publicity, accountability and bad content filtering are cool too when used wisely.
 The main goal is to make a cheap web. Ideally just for free.
-So small businesses can create a cheap site to sell their products without needing to pay to marketplaces.
-So users may have cheap photos storage: just connect an SSD disk to your router.
-So that authors can create and sell their content without needing to share money with platforms because their followers are seeding their content.
+* So small businesses can create a cheap site to sell their products without needing to pay to marketplaces.
+* So users may have cheap photos storage: just connect an SSD disk to your router.
+* So that authors can create and sell their content without needing to share money with platforms because their followers are seeding their content.
+If something is better to be centralized like authorization then ok. If something would be better decentralized like content distribution: ok, let's try to do it so.
 
+The end goal is that all users will have a Yurt already installed on their routers and devices when they purchase so they can just start using it.
 
 ## Problems
 
@@ -84,7 +87,7 @@ Yurt must provide some advanced website constructor. Without it peoples just wil
 * https://narod.ru/
 
 #### Small Web and their Site.JS 
-Small Web https://small-tech.org/about/
+Small 0Web https://small-tech.org/about/ is a site constructor with many features.
 
 ### Software
 #### WordPress
@@ -122,7 +125,7 @@ TV/TV box     | 2         | 4GB   | 8GB   | AndroidTV. We may use Termux
 Phone         | 2         | 8GB   | 128GB | Android. We may use Termux
 NAS           | 1         | 8GB   | 2TB   | Proprietary Linux (Disk Station), TrueNAS, Docker
 Raspberry Pi  | 1         | 8GB   | 8GB   | Debian
-Router        | 0.5       | 128MB | 16MB  | OpenWRT, Linksys Linux
+Router        | 0.5       | 128MB | 16MB  | OpenWrt, Linksys Linux
 STM32         | 0.1       | 2MB   | 4MB   | Tasmota
 
 
@@ -149,7 +152,7 @@ So I believe NAS devices will be slowly replaced with advanced routers in featur
 
 #### Turris Omnia: Router that can be a small server
 [Turris Omnia](https://www.turris.com/en/omnia/overview/) is a most powerful router with a fast CPU that can be used as a NAS.
-It uses OpenWRT and you can easily install other apps like NextCloud.
+It uses OpenWrt and you can easily install other apps like NextCloud.
 This router is a first attempt to make a special device for a self-hosting: it supports LXC containers out of the box and regular users may install a lot of things with just a single click.
 A similar router with fast CPU and OpenWRT is the [GL.net Brume](https://www.gl-inet.com/products/gl-mv1000/) but it doesn't have such focus on self-hosting.
 
