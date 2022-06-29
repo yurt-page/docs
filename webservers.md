@@ -45,3 +45,9 @@ Mature but not well known:
 * cherokee
 
 [How to easily start a webserver in any folder?](https://askubuntu.com/questions/377389/how-to-easily-start-a-webserver-in-any-folder/1256550#1256550)
+
+File sharing:
+* https://github.com/ltworf/weborf
+* https://wiki.gnome.org/phodav
+* https://gitlab.gnome.org/GNOME/gnome-user-share
+* https://help.gnome.org/users/gnome-user-share/stable/gnome-user-share.html#:~:text=gnome%2Duser%2Dshare%20uses%20a,computer%20via%20Bluetooth%20via%20ObexPush.
