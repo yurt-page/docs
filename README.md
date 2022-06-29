@@ -1,14 +1,39 @@
-# Yurt Page: own home page website for everybody on Earth and other planets
-Yurt is a small house used my nomads. You can easily construct it.
-Yurt Page is a small home page that you can deploy on your home devices.
+# Yurt Page: your own homepage website for free and for freedom
+<details>
+<summary>Intro: What is Yurt Page</summary>
 
-* Web1.0: peoples just readers of others sites: news, books, portals like Yahoo or MSN.
-* Web2.0: peoples now can create their own content and interact with each others: Wiki, YouTube, Facebook
-* Web3.0: nobody knows but all talking about BlockChain, AI, VR and other buzzwords.
-* ....
-* This will be a Web100500
+Yurt is a small house that is easy to construct.
 
-https://twitter.com/marinintim/status/1471480630445813760
+<img alt="Yurt near Issyk-Kul lake" width="320px" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/4/4f/YurtIssykFamily.jpg" src="https://camo.githubusercontent.com/69dd1b0c82aae39cf6322bde1384952e3fc7c23bdac2e15967ea794adf7eefea/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f342f34662f59757274497373796b46616d696c792e6a7067"/>
+
+The YurtPage is a small homepage that all people can deploy on their own devices like router, Raspberry Pi, PC or even TV.
+So you don't need to pay for hosting.
+The main goal is to make a self hosted website as cheap as possible and typical usage is to have a closed family storage of photos or a small blog.
+
+If you have friends with a YurtPage then your data will be encrypted and stored on their devices and this gives you a backup for free.
+So the bigger your social network the better is for everybody.
+This architecture improves privacy but also makes the internet more distributed and stable.
+</details>
+
+## Idealogy
+
+* Old Web: peoples just readers of content on sites: news, books, portals like Yahoo or MSN.
+* [Web2.0](https://en.wikipedia.org/wiki/Web_2.0): peoples now can create their own content and interact with each others: Wiki, YouTube, Facebook.
+* [Web3](https://en.wikipedia.org/wiki/Web3): "decentralized" still nobody knows what it is but all talking about BlockChain, metaverse, NFT and other buzzwords.
+
+> I don’t know what Web3 would be based on, but Web4 would be based on HTML and cgi-bin.
+> — [Albert Einstein](https://twitter.com/marinintim/status/1471480630445813760)
+
+And that's exactly what Yurt uses :) That's esseintal technologies that may work on a smallest devices.
+
+Basically for the Yurt the terminology is not applied at all.
+The main goal is to make a cheap web. Ideally just for free.
+So small businesses can create a cheap site to sell their products without needing to pay to marketplaces.
+So users may have cheap photos storage: just connect an SSD disk to your router.
+So that authors can create and sell their content without needing to share money with platforms because their followers are seeding their content.
+
+
+## Problems
 
 Even today anybody can create its own site: buy a hosting for about 5$ per month, and also you have to buy some domain, then install WordPress blog engine and configure it.
 But nobody will ever visit your site. Only occasional visits from Google search.
@@ -46,7 +71,7 @@ Yurt is not related to IndieWeb because ideologically is different (we are fine 
 They developed the OpenWRT for their needs.
 
 #### prpl Foundation 
-[prpl Foundation ](https://prplfoundation.org/) is an attempt to collaborate between network equipment manufactures and network providers to create an OpenWRT based platform and use it instead of unknown and unsecure routers firmware.
+[prpl Foundation ](https://prplfoundation.org/) is an attempt to collaborate between network equipment manufactures and network providers to create an OpenWrt based platform and use it instead of unknown and unsecure routers firmware.
 
 ### Site constructors
 MySpace was probably the first popular personal websites hosting. But all users made their own design that sometimes looks terrible.
@@ -55,8 +80,8 @@ Yurt must provide some advanced website constructor. Without it peoples just wil
 
 * https://myspace.com/
 * https://neocities.org/
-* https://narod.ru/
 * https://wix.com/
+* https://narod.ru/
 
 #### Small Web and their Site.JS 
 Small Web https://small-tech.org/about/
