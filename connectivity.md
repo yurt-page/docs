@@ -1,27 +1,16 @@
 # Expose web server without a public IP address
 
 
+
+
 Connectivity is a problem even bigger than hosting devices.
 Many consumer grade devices doesn't have a static IP so that nobody from internet can't connect directly.
 Some providers allows to buy a static IP but it not so cheap. And again, the main goal is to make users not to pay anything.
 Many ISPs gives a dynamic IP that is chaning from time to time. So you can't register a DNS record because when it will be changed you may not notice.
 
-
-## SSH tunnel
-Dropbear supports the feature. But they are slow. OpenWrt has a sshtunnel package to reconnect but it depends on OpenSSH client.
-
-## Tor
-Single Onion Service is a good option. But it's slow and can be accessed only from Tor Browser.
-
-## DDNS
-The jkl.mn will offer a Dynamic DNS service.
-Each subdmoain will be a random onion domain so that no needs to be registred.
-
-
-
-If your web server doesn't have a public IP address e.g. behind NAT then it can't be accessd from internet.
+If your web server doesn't have a public or dynamic IP address e.g. behind NAT then it can't be accessd from internet.
 So you need some public proxy that your sevrer will connect to and the proxy will redirect incoming request to your server.
-Usually such proxies also gives you an uniq subdomain and can enable HTTPS for you.
+Usually such proxies also gives you an unique subdomain and can enable HTTPS for you.
 
 Here many problems arise:
 1. The proxy has bandwith limits
@@ -31,6 +20,9 @@ Here many problems arise:
 
 Tecnically speaking the tunnel between server and proxy is not so easy to implement.
 It must be not a VPN but also simple SOCKS is not good here. So such tunneling services uses protocols like port forward over SSH or specialized multiplexing protocols.
+
+## SSH tunnel
+Dropbear supports the feature. But they are slow. OpenWrt has a sshtunnel package to reconnect but it depends on OpenSSH client.
 
 ## TCP tunnels providers
 Here is a list (hope not complete) of such proxies services:
@@ -57,3 +49,14 @@ Here is a list (hope not complete) of such proxies services:
 * https://forwardhq.com/ not works anymore
 * [serveo.net](https://github.com/u1i/tools/blob/master/serveo.md) ssh tunnel, not works anymore
 * https://progsoft.net/en/software/pagekite other related software.
+
+
+## Tor
+All these problems are solved for Tor network and `*.onion` websites.
+Single Onion Service is a good option: only four hops instead of a hidden service. But it's still slow and can be accessed only from Tor Browser.
+
+## DDNS
+The jkl.mn will offer a Dynamic DNS service.
+Each subdmoain will be a random onion domain so that no needs to be registred.
+
+https://github.com/yurt-page/dyndns-onion
