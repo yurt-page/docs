@@ -76,4 +76,5 @@ Other attempts
 * https://tools.ietf.org/id/draft-grothoff-iesg-special-use-p2p-names-01.html
 * https://web.cs.ucla.edu/~lixia/papers/06INFOCOM.pdf
 * https://www.kiv.zcu.cz/~ledvina/DHT/lecture13.pdf
+* https://mkaczanowski.com/golang-build-dynamic-dns-service-go/
 
