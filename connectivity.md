@@ -74,4 +74,6 @@ Other attempts
 * https://ieeexplore.ieee.org/document/4583073
 * https://wiki.p2pfoundation.net/Dot-P2P
 * https://tools.ietf.org/id/draft-grothoff-iesg-special-use-p2p-names-01.html
+* https://web.cs.ucla.edu/~lixia/papers/06INFOCOM.pdf
+* https://www.kiv.zcu.cz/~ledvina/DHT/lecture13.pdf
 
