@@ -66,9 +66,12 @@ DNS must be authorative but DHT doesn't guaratntee that a record will be found.
 * https://github.com/mwarning/KadNode P2P DNS with content key, crypto key and PKI support. DynDNS alternative.
 * https://www.youtube.com/watch?v=DFFNEoEYItE KadNode talk in German, use autotrsanslate
 
-Old attempt
+Other attempts
 * https://github.com/Mononofu/P2P-DNS
 * https://blog.desdelinux.net/ru/p2p-dns-sera-posible-deshacernos-de-icann/
 * https://www.networkworld.com/article/2195700/p2p-based-alternative-to-dns-hopes-to-challenge-icann.html
 * https://www.scs.stanford.edu/20sp-cs244b/projects/pDNS.pdf
+* https://ieeexplore.ieee.org/document/4583073
+* https://wiki.p2pfoundation.net/Dot-P2P
+* https://tools.ietf.org/id/draft-grothoff-iesg-special-use-p2p-names-01.html
 
