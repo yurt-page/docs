@@ -61,6 +61,11 @@ Each subdmoain will be a random onion domain so that no needs to be registred.
 
 https://github.com/yurt-page/dyndns-onion
 
+* https://ru.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_DNS#%D0%9F%D0%BE_%D0%B4%D0%BB%D1%8F_DDNS_%D0%BF%D1%80%D0%BE%D0%B2%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%BE%D0%B2=
+* https://jpmens.net/2013/03/12/knot-dns-dynamic-updates-and-a-bit-of-rrl/
+* https://jpmens.net/2011/10/13/dynamically-or-not-dynamically-that-is-the-question/
+* https://openwrt.org/docs/guide-user/services/ddns/client#bindnsupdate
+
 ## P2P DNS with DHT
 DNS must be authorative but DHT doesn't guaratntee that a record will be found.
 * https://github.com/mwarning/KadNode P2P DNS with content key, crypto key and PKI support. DynDNS alternative.
