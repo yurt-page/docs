@@ -72,3 +72,32 @@ https://help.dyn.com/remote-access-api/perform-update/
 ## Knot DDNS
 https://jpmens.net/2013/03/12/knot-dns-dynamic-updates-and-a-bit-of-rrl/
 https://jpmens.net/2011/10/13/dynamically-or-not-dynamically-that-is-the-question/
+
+
+## DNS pull
+From https://www.kiv.zcu.cz/~ledvina/DHT/lecture13.pdf:
+
+There are 76.9 million domains registered
+– Including generic TLDs and country-code TLDs
+– Compressed file with all info -- 7.5GB
+• About 20,000 AS’s in the world
+– Suppose each NS serves other 3 NS’s (23 GB pushed)
+– Build delivery tree of depth 10 roughly
+• Push updates daily
+– About 760 KBytes / hour
+– About 850 Kbps upload to three peers
+• A lot of changes are for the same bindings
+– 87% of domains do not change at all
+
+
+Great latency performance!
+• Akamai still works
+• Backward-compatible with old DNS
+• We are only adding prefetching to DNS
+– Improve performance with affecting the systems’
+architecture
+• Idea for M.Sc. project:
+– build push-based DNS!
+
+
+https://twitter.com/stokito/status/1540107921324900356
