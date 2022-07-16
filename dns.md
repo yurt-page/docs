@@ -67,3 +67,8 @@ Other attempts
 ## DynDNS2 API
 https://www.dynu.com/en-US/DynamicDNS/IP-Update-Protocol#signoff
 https://nsupdateinfo.readthedocs.io/en/latest/standards.html
+https://help.dyn.com/remote-access-api/perform-update/
+
+## Knot DDNS
+https://jpmens.net/2013/03/12/knot-dns-dynamic-updates-and-a-bit-of-rrl/
+https://jpmens.net/2011/10/13/dynamically-or-not-dynamically-that-is-the-question/
