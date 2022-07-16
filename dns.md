@@ -61,7 +61,8 @@ Other attempts
 * https://mkaczanowski.com/golang-build-dynamic-dns-service-go/
 
 
-
+Use DANE for TLS cert
+https://www.youtube.com/watch?v=nt261DzHdNU
 
 
 ## DynDNS2 API
