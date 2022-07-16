@@ -59,3 +59,11 @@ Other attempts
 * https://web.cs.ucla.edu/~lixia/papers/06INFOCOM.pdf
 * https://www.kiv.zcu.cz/~ledvina/DHT/lecture13.pdf
 * https://mkaczanowski.com/golang-build-dynamic-dns-service-go/
+
+
+
+
+
+## DynDNS2 API
+https://www.dynu.com/en-US/DynamicDNS/IP-Update-Protocol#signoff
+https://nsupdateinfo.readthedocs.io/en/latest/standards.html
