@@ -38,6 +38,9 @@ Each subdmoain will be a random onion domain so that no needs to be registred.
 
 https://github.com/yurt-page/dyndns-onion
 
+* https://www.youtube.com/watch?v=zZzOVKPcIMg Jesse Victors - The Onion Name System: Tor-powered Decentralized DNS for Tor Onion Services
+
+
 * https://ru.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_DNS#%D0%9F%D0%BE_%D0%B4%D0%BB%D1%8F_DDNS_%D0%BF%D1%80%D0%BE%D0%B2%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%BE%D0%B2=
 * https://jpmens.net/2013/03/12/knot-dns-dynamic-updates-and-a-bit-of-rrl/
 * https://jpmens.net/2011/10/13/dynamically-or-not-dynamically-that-is-the-question/
@@ -61,19 +64,21 @@ Other attempts
 * https://mkaczanowski.com/golang-build-dynamic-dns-service-go/
 
 
-Use DANE for TLS cert
-https://www.youtube.com/watch?v=nt261DzHdNU
+## DANE
+* https://www.youtube.com/watch?v=nt261DzHdNU Use DANE for TLS cert for NameCoin
+* https://habr.com/ru/company/1cloud/blog/454322/ DANE для браузеров провалилась
 
 
 ## DynDNS2 API
-https://www.dynu.com/en-US/DynamicDNS/IP-Update-Protocol#signoff
-https://nsupdateinfo.readthedocs.io/en/latest/standards.html
-https://help.dyn.com/remote-access-api/perform-update/
+* https://www.dynu.com/en-US/DynamicDNS/IP-Update-Protocol#signoff
+* https://nsupdateinfo.readthedocs.io/en/latest/standards.html
+* https://help.dyn.com/remote-access-api/perform-update/
 
 ## Knot DDNS
-https://jpmens.net/2013/03/12/knot-dns-dynamic-updates-and-a-bit-of-rrl/
-https://jpmens.net/2011/10/13/dynamically-or-not-dynamically-that-is-the-question/
-
+* https://jpmens.net/2013/03/12/knot-dns-dynamic-updates-and-a-bit-of-rrl/
+* https://jpmens.net/2011/10/13/dynamically-or-not-dynamically-that-is-the-question/
+* https://www.knot-dns.cz/docs/2.6/html/configuration.html#dynamic-updates
+* https://habr.com/ru/post/101380/ Собственный Dynamic DNS
 
 ## DNS pull
 From https://www.kiv.zcu.cz/~ledvina/DHT/lecture13.pdf:
