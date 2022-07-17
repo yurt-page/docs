@@ -79,6 +79,7 @@ Other attempts
 * https://jpmens.net/2011/10/13/dynamically-or-not-dynamically-that-is-the-question/
 * https://www.knot-dns.cz/docs/2.6/html/configuration.html#dynamic-updates
 * https://habr.com/ru/post/101380/ Собственный Dynamic DNS
+* https://doc.turris.cz/doc/en/public/dns_knot_misc
 
 ## DNS pull
 From https://www.kiv.zcu.cz/~ledvina/DHT/lecture13.pdf:
