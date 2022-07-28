@@ -45,6 +45,7 @@ The problems are solved by social network: you see everything that your friends 
 * [Similar projects or what do we have today](./alternatives.md)
 * [Hosting and devices](./hosting.md)
 * [Connectivity and DNS](./connectivity.md)
+* [Domains](./dns.md)
 * [HTTP Web Servers](./webservers.md)
 
 ## Features
