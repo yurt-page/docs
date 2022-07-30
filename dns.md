@@ -91,9 +91,12 @@ Other attempts and research
 * https://www.kiv.zcu.cz/~ledvina/DHT/lecture13.pdf
 * https://mkaczanowski.com/golang-build-dynamic-dns-service-go/
 
+## GNUnet Name System
+It also uses DHT a (but their own R5N) but very complicated to understand.
+https://lsd.gnunet.org/lsd0001/
 
 ## DANE
-DANE ptotocol used to set a TLS cert with DSN record. This makes possibe to have HTTPS for .bit and .onion domains.
+DANE ptotocol used to set a TLS cert with DSN record. This makes possibe to have HTTPS for .bit and .onion domains i.e. without a CA.
 * https://www.youtube.com/watch?v=nt261DzHdNU Use DANE for TLS cert for NameCoin
 * https://habr.com/ru/company/1cloud/blog/454322/ DANE для браузеров провалилась
 
