@@ -28,7 +28,7 @@ Basically any static site generator may be used like [Hugo](https://gohugo.io/) 
 But they all are written in Go/Ruby/PHP and it's hard to put them on a router.
 Hugo in Go, [Grav CMS](https://learn.getgrav.org/17/basics/what-is-grav): in PHP,
 [Ghost](https://github.com/TryGhost/Ghost) and
-[11ty](https://github.com/11ty/eleventy/) in NodeJS.
+[11ty](https://github.com/11ty/eleventy/) in Node.js.
 The https://www.htmly.com/ in PHP
 
 Shell script based site generators:
@@ -47,19 +47,19 @@ WebDAV based blog engines:
 * https://searchmysite.net/ search by indie blogs
 
 ## Compression
-My entire blog for ten years in Wordpress when exported to RSS (XMl) is only about 3mb. So it may be served even from a 4mb router if remove Luci from it and compress the rss and then uncompress into memory (/tmp) and serve.
+My entire blog for ten years in WordPress when exported to RSS (XMl) is only about 3mb. So it may be served even from a 4mb router if remove Luci from it and compress the rss and then uncompress into memory (/tmp) and serve.
 Basically the squashfs on the OpenWrt use the LZMA compression so the additional compression may be not needed.
 
-We can serve the pre-compressed file directly with `Content-Encoding: gzip` and save a network bandwith.
-Browsers supports only deflate, gzip, brotli, and Chrome now also supports zstd. The RSS is usually consumed by RSS readers that may support only deflate and gzip. Two Yurts may use any compression which they like e.g LZMA but this is a last resort.
+We can serve the pre-compressed file directly with `Content-Encoding: gzip` and save a network bandwidth.
+Browsers supports only deflate, gzip, brotli, and Chrome now also supports zstd. The RSS is usually consumed by RSS readers that may support only deflate and gzip. Two Yurts may use any compression which they like e.g. LZMA but this is a last resort.
 
-* deflate compression uses a 32k window without a dictionary. Fast and effective.
-* gzip is a deflate with a checksum. This is a de-facto standard default encryption. OpenWrt have the gzip command out of the box.
-* lzma gives a best compression, but extreemely slow on compression and decompression. The OpenWrt uses it for SquashFS but there is no xz command out of the box. One of my ideas was to bring the lzma compressor from the SquashFS to user space command.
-* brotli has a dictionary for web assets (HTML, JS and CSS) and has slow compression but fast enough decompression. It may be too heavy to install on routers. The format is really bad by itself: no concatenation, no magic header. Most advantages comes from the good dictionary.
-* zstd has a good compression speed and it can be a replacement for gzip as a default. You can use a dictionary to improve. With a maximum level it almost like xz but with a better decompression speed.
+* `deflate` compression uses a 32k window without a dictionary. Fast and effective.
+* `gzip` is a `deflate` with a checksum. This is a de-facto standard default encryption. OpenWrt have the gzip command out of the box.
+* `lzma` gives the best compression, but extremely slow on compression and decompression. The OpenWrt uses it for SquashFS but there is no xz command out of the box. One of my ideas was to bring the lzma compressor from the SquashFS to user space command.
+* `brotli` has a dictionary for web assets (HTML, JS and CSS) and has slow compression but fast enough decompression. It may be too heavy to install on routers. The format is really bad by itself: no concatenation, no magic header. Most advantages comes from the good dictionary.
+* `zstd` has a good compression speed and it can be a replacement for gzip as a default. You can use a dictionary to improve. With a maximum level it almost like xz but with a better decompression speed.
 
-Here is a comparission of compression ratio of the rss.xml and size of all separate posts gzipped:
+Here is a comparison of compression ratio of the rss.xml and size of all separate posts gzipped:
 
 | file        | bytes   | ratio |
 |-------------|---------|-------|
@@ -70,7 +70,7 @@ Here is a comparission of compression ratio of the rss.xml and size of all separ
 | rss.xml.br  | 437314  | 14%   |
 | post.*.gz   | 911604  | 29%   |
 
-Just gzip makes the rss five times smaller. With Brotli it can be seven times smaller.
+Just gzip makes the rss five times smaller. With the Brotli it can be seven times smaller.
 But gzipped files can be processed on OpenWrt backend more easily.
 
 As a trick we can use gzip or any other compression on a browser side.

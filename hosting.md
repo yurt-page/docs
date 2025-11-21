@@ -9,19 +9,19 @@ A router can be:
 
 ### Devices
 
-Hosting type  | CPU cores | RAM   | Disk  |  OS
---------------|-----------|-------|-------|-----
-VPC           | 2         | 16GB  | 512GB | Linux
-PC            | 4         | 16GB  | 1TB   | Most of them use Windows for games, in USA MacOS is also popular. We may use Docker. Important to have a tray icon.
-Browser on PC | 1         | 2GB   | 50MB  | Chrome workers. Open tab, install app or extension
-Laptop        | 2         | 8GB   | 200GB | Mostly Windows, MacOS. Sometimes Linux
-Nettop        | 2 x86     | 8GB   | 200GB | Windows, Linux, [Low-power x86](https://sequentialread.com/i-was-wrong-about-arm-sbcs/). E.g. Lenovo ThinkCentre
-TV/TV box     | 2 ARM     | 4GB   | 8GB   | AndroidTV. We may use Termux
-Phone         | 2 ARM     | 8GB   | 128GB | Android. We may use Termux
-NAS           | 1         | 8GB   | 2TB   | Proprietary Linux (Disk Station), TrueNAS, Docker
-Raspberry Pi  | 1         | 8GB   | 8GB   | Debian
-Router        | 0.5       | 128MB | 16MB  | OpenWrt, Linksys Linux
-STM32         | 0.1       | 2MB   | 4MB   | Tasmota
+| Hosting type  | CPU cores | RAM   | Disk  | OS                                                                                                                  |
+|---------------|-----------|-------|-------|---------------------------------------------------------------------------------------------------------------------|
+| VPC           | 2         | 16GB  | 512GB | Linux                                                                                                               |
+| PC            | 4         | 16GB  | 1TB   | Most of them use Windows for games, in USA MacOS is also popular. We may use Docker. Important to have a tray icon. |
+| Browser on PC | 1         | 2GB   | 50MB  | Chrome workers. Open tab, install app or extension                                                                  |
+| Laptop        | 2         | 8GB   | 200GB | Mostly Windows, MacOS. Sometimes Linux                                                                              |
+| Nettop        | 2 x86     | 8GB   | 200GB | Windows, Linux, [Low-power x86](https://sequentialread.com/i-was-wrong-about-arm-sbcs/). E.g. Lenovo ThinkCentre    |
+| TV/TV box     | 2 ARM     | 4GB   | 8GB   | AndroidTV. We may use Termux                                                                                        |
+| Phone         | 2 ARM     | 8GB   | 128GB | Android. We may use Termux                                                                                          |
+| NAS           | 1         | 8GB   | 2TB   | Proprietary Linux (Disk Station), TrueNAS, Docker                                                                   |
+| Raspberry Pi  | 1         | 8GB   | 8GB   | Debian                                                                                                              |
+| Router        | 0.5       | 128MB | 16MB  | OpenWrt, Linksys Linux                                                                                              |
+| STM32         | 0.1       | 2MB   | 4MB   | Tasmota                                                                                                             |
 
 See also https://en.wikipedia.org/wiki/Home_theater_PC
 
@@ -29,7 +29,7 @@ See also https://en.wikipedia.org/wiki/Home_theater_PC
 #### Raspberry Pi: a single board computer
 Raspberry Pi is an ARM based single board computer that doesn't have a fan and energy effective.
 Currently a lot of DYI projects uses Pi. It's not so fast as a usual PC but faster than routers.  
-You can install a Debian with Python, PHP or Node.JS. So basically every today's software maybe slowly but can be run on Pi.
+You can install a Debian with Python, PHP or Node.js. So basically every today's software maybe slowly but can be run on Pi.
 
 Most known project is [Pi-hole](https://pi-hole.net/) Ad Blocking proxy.
 Mozilla WebThings is Python based and also targeted to be run on Pi.

@@ -2,7 +2,7 @@
 > [!NOTE]
 > Project tasks https://github.com/orgs/yurt-page/projects/16
 
-EMail is a corner stone of Internet, and it's important to give users an ability to send and receive them.
+EMail is a cornerstone of Internet, and it's important to give users an ability to send and receive them.
 Emails are very important for privacy: if you read someone's email you know what they buy, what websites they visit, what happens in their life.
 If email hacked then you can reset passwords on all websites. **Unless you have a secure email you can't really be safe in internet.**
 <details>
@@ -129,10 +129,10 @@ sendmail with deliver
 * https://github.com/richfelker/mxclient dnssec+beartls 
 * https://github.com/corecode/dma makes MX lookup
 
-Enryption:
+Encryption:
 * https://vesmail.email/ e2e encryption email utility
 
-We can postpone this for latter but now start with a custom built and stripped Postfix.
+We can postpone this for latter but now start with a custom-built and stripped Postfix.
 Or we can use the EmailRelay.
 
 ### EmailRelay
@@ -206,7 +206,7 @@ https://docs.sandstorm.io/en/latest/administering/email/
 
 ## Cloudron Email
 
-The Cloudron is Node.JS based self-hosting solution most similar to Sandstorm.
+The Cloudron is Node.js based self-hosting solution most similar to Sandstorm.
 It has build-in email server https://docs.cloudron.io/email/ that uses internally https://nodemailer.com/about/ and have some UI.
 This is a very good example.
 
@@ -221,12 +221,12 @@ This is a very good example.
 ## Test
 When configuring an email server you can check your rating on  https://www.mail-tester.com
 
-https://toolbox.googleapps.com/apps/messageheader/analyzeheader analyze message headers to see dkim scheks and delivery time
+https://toolbox.googleapps.com/apps/messageheader/analyzeheader analyze message headers to see dkim checks and delivery time
 
 See also https://wiki.archlinux.org/title/Mail_server
 
 ## Hosting mail or outsourcing?
-TL;DR Yes, setup it (if you have a time) but use a free mail (Gmail, iCloud etc) and slowly try to use your own mailbox.
+TL;DR Yes, setup it (if you have a time) but use a free mail (Gmail, iCloud etc.) and slowly try to use your own mailbox.
 
 You have different properties of email:
 
@@ -249,7 +249,7 @@ Also your server may be blocked and disk is full.
 How many emails you need to send or receive? For receiving you may reach limit of the email provider.
 For making an email campaign you need to use other services like Mailchimp because your server will be blocked quickly.
 
-Life time: sometimes you need just a one time usage of email for example to quickly register on some site and just forgot it.
+Lifetime: sometimes you need just a one time usage of email for example to quickly register on some site and just forgot it.
 
 Personal usage can be:
 
@@ -261,9 +261,8 @@ Then if you'll start receive spam then you'll know who leaked your email and can
 
 So here for important sites you may use a free Gmail/iCloud mail but for others sites you may use your own mail server.
 
-2. You'll receive a notifications from sites e.g. "someone answered to your question". But most time you'll receive some marketing engaging letters from sites where you registered. Here you don't really care about how your address looks like: it can be even a random number. With your server you can generate mail addresses per site.
-
-3. You're receiving a personal mail (e.g. from a friend). You don't really afraid of spam because you're giving the address only to people whom you know. Here you want for some privacy but also you need more robustness e.g. you don't want to lost you access. So here is better to use a free mail provider e.g. Gmail, iCloud etc.
+You'll receive a notifications from sites e.g. "someone answered to your question". But most time you'll receive some marketing engaging letters from sites where you registered. Here you don't really care about how your address looks like: it can be even a random number. With your server you can generate mail addresses per site.
+You're receiving a personal mail (e.g. from a friend). You don't really afraid of spam because you're giving the address only to people whom you know. Here you want for some privacy, but also you need more robustness e.g. you don't want to lose you access. So here is better to use a free mail provider e.g. Gmail, iCloud etc.
 
 I may continue but hope you got the idea.
 

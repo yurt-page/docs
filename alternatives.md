@@ -4,8 +4,8 @@ But there are always some difference in implementations,
 
 ## Movements, communities and organizations
 
-### Selfhosted communities and forums
-* https://noted.lol/ web site dedicated to selfhosting
+### Self-hosting communities and forums
+* https://noted.lol/ website dedicated to self-hosting
 * [/r/selfhosted/](https://www.reddit.com/r/selfhosted/) reddit discussions
 * [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) directory of software
 * [Self-Hosting Guide](https://github.com/mikeroyal/Self-Hosting-Guide)
@@ -14,7 +14,7 @@ But there are always some difference in implementations,
 * [Зачем нужен личный сайт в 2023 году](https://habr.com/en/companies/ruvds/articles/717952/)
 
 ### FUTO Circles
-The [Circles app](https://circles.futo.org/about/) is an open source end to end encrypted social network for a family.
+The [Circles app](https://circles.futo.org/about/) is an open source end-to-end encrypted social network for a family.
 Based on Matrix protocol.
 
 ### IndieWeb
@@ -56,10 +56,10 @@ They developed the OpenWRT, KadNode DNS and some other projects for their needs.
 ### Turris
 [Turris](https://www.turris.com/) is an OpenWrt based router with powerful CPU that almost completely open source and can be used as a home server.
 E.g. you can install NextCloud and other programs with just a click.
-This is the closest to the Yurt idea and you can try it today.
+This is the closest to the Yurt idea, and you can try it today.
 
 ### prpl Foundation
-[prpl Foundation ](https://prplfoundation.org/) is an attempt to collaborate between network equipment manufactures and network providers to create an OpenWrt based platform and use it instead of unknown and unsecure routers firmware.
+[prpl Foundation ](https://prplfoundation.org/) is an attempt to collaborate between network equipment manufactures and network providers to create an OpenWrt based platform and use it instead of unknown and unsecure router's firmware.
 
 ### iconet Foundation
 The [iconet](https://iconet-foundation.org/) is an attempt to create a responsible social network
@@ -134,21 +134,21 @@ The web panel is written in Python and Django. It lacks of usability e.g. they d
 ### Yunohost
 [Yunohost](https://yunohost.org/) (sounds like "Why you no host?") is more popular and Docker based solution.
 The dashboard provides SSO authorization so you can open any app without being asked for a password.
-App are mostly well known: RoundCube for Email, Wordpress for Blog etc.
+App are mostly well known: RoundCube for Email, WordPress for Blog etc.
 
 ### 0Web
 Small 0Web https://small-tech.org/about/ is a site constructor with many features. [Site.JS](https://sitejs.org/) 
-It's based on Node.JS and idea is to make an easy to setup website.
+It's based on Node.js and idea is to make an easy to set up website.
 They have a good ideology manifest.
 
 ### Root project
-https://therootcompany.com personal cloud. Again in Node.JS.
+https://therootcompany.com personal cloud. Again in Node.js.
 It's in development but some components like tunnel and JS crypto libraries are working and even used by other solutions.
 Here is some description https://git.rootprojects.org/root/meta
 It's author https://github.com/coolaj86 makes a lot of useful things for self-hosting a libre movement and a lot of video lectures.
 
 
-## Many other interesting
+## Many others interesting
 There is a lot of similar projects that provide a ready to use self-host solutions.
 Some noteworthy:
 
@@ -172,7 +172,7 @@ But they are all too heavy for a regular routers and doesn't have a social compo
 
 In fact the Yurt should be the same Self-hosting Solution but with a few differences:
 1. Focus on small size and power efficiency.
-   * So any PHP, NodeJS, Golang, Python based solution won't work for us. We need to use what the OpenWrt use e.g. plain C, Lua, Shell and recently Ucode which is JS dialect.
+   * So any PHP, Node.js, Golang, Python based solution won't work for us. We need to use what the OpenWrt use e.g. plain C, Lua, Shell and recently Ucode which is JS dialect.
    * Apps that we use should be also small
    * Yeah, and we can't use Docker
 2. Instead of a nice looking or good UX we have to use "simple" e.g. ugly but more error-prone design. For example use text instead of icons, don't use animation.
@@ -183,7 +183,7 @@ In fact the Yurt should be the same Self-hosting Solution but with a few differe
 
 ## Decentralized protocols
 Many of them, good ideas but mostly bad implementations.
-* https://willowprotocol.org/ a protocol for peer-to-peer data stores. Fine-grained permissions, a keen approach to privacy, destructive edits, and a dainty bandwidth and memory footprint. See its a good written [Comparison to Other Protocols](https://willowprotocol.org/more/compare/index.html)
+* https://willowprotocol.org/ a protocol for peer-to-peer data stores. Fine-grained permissions, a keen approach to privacy, destructive edits, and a dainty bandwidth and memory footprint. See the [Comparison to Other Protocols](https://willowprotocol.org/more/compare/index.html)
 * IPFS, FileCoin, Veilid - a torrent like p2p file storages
 * Scuttlebutt, Hypercore - chats 
 * Tangle Sync

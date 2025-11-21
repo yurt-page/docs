@@ -9,7 +9,7 @@
 5. Social login with jkl.mn: we may become the same OAuth provider as Google, FB. This differs from auth by a yurt with IndieAuth
 
 
-The [XEP-0070: Verifying HTTP Requests via XMPP](https://xmpp.org/extensions/xep-0070.html) to confirm signin. See [demo](https://demo.agayon.be/)
+The [XEP-0070: Verifying HTTP Requests via XMPP](https://xmpp.org/extensions/xep-0070.html) to confirm signing. See [demo](https://demo.agayon.be/)
 
 
 

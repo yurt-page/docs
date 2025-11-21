@@ -1,24 +1,24 @@
 # Domains and DNS
-Domains and DNS is surprisingly a very big problem for a self hosting:
+Domains and DNS is surprisingly a very big problem for a self-hosting:
 
 * A domain is not that cheap. For people from reach countries this is not a problem but this is a big problem for others (Like me when I was a student. Even now I decided that my domain doesn't worth that money and canceled). 
-* And don't forget to renew it. Most of homepages had their domain expired. Then is can be hijacked by squatters. This is what happened for me too. And I can't understand where the squatters takes a money to pay for my domain, unless they don't really pay anything.
+* And don't forget to renew it. Most of the homepages had their domain expired. Then is can be hijacked by squatters. This is what happened for me too. And I can't understand where the squatters take money to pay for my domain, unless they don't really pay anything.
 * Good luck to find a good and not taken name.
   * You may also violate a trademark.
-  * Frauders may create a fishing "your-bank" domain.
+  * Fraudsters may create a fishing "your-bank" domain.
 * It complicated to configure:
   * This is a manual step to buy a domain.
   * There is no a singe DNS config API and instead we there are over hundred APIs for each registrar.
   * You need to understand what does it mean these A, AAAA, MX, NS and other records.
 * Zones have their own rules about content of your site.
   * You may be easily lost your domain or just blocked, censored or eliminated by a competitor.
-  * A lot of fake abuse reports may harm your business (not really a problem for self hosting).
-* Those money goes to the ICANN monopoly basically for nothing. Some registrars are controlled by suspissios organizations or even mafias.
+  * A lot of fake abuse reports may harm your business (not really a problem for self-hosting).
+* Those money goes to the ICANN monopoly basically for nothing. Some registrars are controlled by suspicious organizations or even mafias.
 * There are no a good geographical distribution between registrars:
   * Most of them are in US, some in German other big countries may have only three-four registrars and entire continents are underrepresented.
   * This is inequality but also have some risks and problems like unability to pay in local currencies and payment systems.
   * Some TLDs are belongs to big corporations (e.g. `.dev` by Google) that erodes DNS neutrality.
-  * There are a few big registrars that takes most of market and form a cartel.
+  * There are a few big registrars that takes most market and form a cartel.
 
 
 For now the main idea is to make the jkl.mn to offer a Dynamic DNS service.
@@ -58,7 +58,7 @@ Some protocol descriptions:
 * [DynV6](https://dynv6.com/) feature rich and cool API.
 * [nsupdate.info](https://www.nsupdate.info) has no limits and it's backend code is open sourced. But currently [account registration is closed because of many abuses](https://github.com/nsupdate-info/nsupdate.info/issues/496).
 * [Free DNS](https://freedns.afraid.org) one of the oldest but uses own XML based protocol.
-* [dynu.com] looks like not working anymore but have a rich and well documented apii
+* [dynu.com] looks like not working anymore but have a rich and well documented API
 * [freemyip.com](https://freemyip.com/) easy to start
 
 
@@ -88,7 +88,7 @@ Some protocol descriptions:
 * https://github.com/go-acme/lego Golang. Used by Caddy but bloated
 * https://github.com/StackExchange/dnscontrol Golang
 * OpenWrt ddns-scripts has API integrations https://github.com/openwrt/packages/tree/master/net/ddns-scripts/files/usr/lib/ddns
-* Letsencrypt dns-01 needs for DNS API impementations and there is a lot of them:
+* LetsEncrypt dns-01 needs for DNS API implementations and there is a lot of them:
   * https://letsencrypt.org/en/docs/client-options/ some clients support the dns-01
   * certbot has DNS api plugins written in Python
     * The [certbot](https://github.com/certbot/certbot) itself out of the box has `certbot-dns-*` plugins for ovh, DO, CF
@@ -108,7 +108,7 @@ Some protocol descriptions:
 * [dprandzioch/docker-ddns](https://github.com/dprandzioch/docker-ddns) written in Go, no UI, accepts DynDNS2 updates but then calls nsupdate for DNS server.
 * [olimpo88/PyDDNS](https://github.com/olimpo88/PyDDNS) UI for dprandzioch/docker-ddns written in Python и Django.
 * [ddserver](https://github.com/ddserver/ddserver) written in Python, used as pipe-backend for PowerDNS
-* [node-ddns](https://github.com/DSorlov/node-ddns) written in NodeJS, a standalone DNS server with basic support of DynDNS2
+* [node-ddns](https://github.com/DSorlov/node-ddns) written in Node.js, a standalone DNS server with basic support of DynDNS2
 * https://www.npmjs.com/package/ddnsd and https://github.com/coolaj86?tab=repositories&q=ddns from AJ ONeal (author of https://therootcompany.com/hub/)
 * https://www.npmjs.com/search?q=ddns plenty of others like https://github.com/eugeneware/homer
 * [hoedlmoser/ddnss](https://github.com/hoedlmoser/ddnss) written in PHP, no UI, just accepts DynDNS2 updates and calls nsupdate
@@ -122,7 +122,7 @@ Some protocol descriptions:
 * http://smarden.org/tinydyndns/ update DNS by POP3 O_o (from djbdns)
 
 I added links to a Wikipedia page to make them easier to find for a new users https://ru.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_DNS#%D0%9F%D0%BE_%D0%B4%D0%BB%D1%8F_DDNS_%D0%BF%D1%80%D0%BE%D0%B2%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%BE%D0%B2=
-But these links may be removed any time because Wikipedics don't like them.
+But these links may be removed any time because Wikipedia don't like them.
 
 Here is a prototype that I made https://github.com/yurt-page/go-ddnsd
 
@@ -159,19 +159,19 @@ DNS must be authoritative but DHT doesn't guarantee that a record will be found 
 The [KadNode](https://github.com/mwarning/KadNode) is P2P DNS with content key, crypto key and PKI support.
 See [KadNode talk](https://www.youtube.com/watch?v=DFFNEoEYItE). It's in German, use auto-translate.
 
-This is basically DNS over Torrent DHT (Kadmelia). The DHT is slow so the domain may be not resolved before timeout.
-The DHT is great because there is no a DB but also adds some level of stablity against outages or attacks.
-The Tor network also uses own DHT but it's more advanced: not only faster but also makes re-hash daily to protect from generating of similar hashes for a specific domain and thus catching search requests and thus get approximate count of visits.
+This is basically DNS over Torrent DHT (Kademlia). The DHT is slow so the domain may be not resolved before timeout.
+The DHT is great because there is no a DB but also adds some level of stability against outages or attacks.
+The Tor network also uses own DHT, but it's more advanced: not only faster but also makes re-hash daily to protect from generating of similar hashes for a specific domain and thus catching search requests and thus get approximate count of visits.
 As a random source for re-hashing the Tor takes last block hash from Bitcoin blockchain which is a cool idea by itself and may be used in other places.
 
-By itself the domains can be usual e.g. real registered or just a ECC public key e.g. free but ugly.
+By itself the domains can be usual e.g. real registered or just an ECC public key e.g. free but ugly.
 Once KadNode resolves an IP it will try to connect itself and check that cert corresponds.
 This saves from connecting to another server with the IP of outdated domain.
 E.g. KadNode makes the same check that a browser makes when checks that a cert's domain corresponding to the domain.
-This adds an addional delay.
+This adds an additional delay.
 
 The KadNode is based on mbedTLS that doesn't have ed25519 so it also can't generate onion-like domains.
-This is not a big deal but having interchangable domains is a nice thing to have.
+This is not a big deal but having interchangeable domains is a nice thing to have.
 
 
 ### Related Projects
@@ -184,9 +184,9 @@ This is not a big deal but having interchangable domains is a nice thing to have
 * [Tor Onion Services](https://en.wikipedia.org/wiki/.onion) internally uses DHT with additional protections
 * [GNUnet Name System](https://gnunet.org/) uses own fast DHT (R5N) but very complicated to understand. Like in the Tor DNS requests are anonomyzed. See the [GNS technical specification](https://lsd.gnunet.org/lsd0001/)
 * Blockchain based:
-  * [NameCoin](https://www.namecoin.org/) blockchain for DNS that solves [Zuko's Triangle](https://en.wikipedia.org/wiki/Zooko%27s_triangle) allowing you to have a meaninful name. You have to buy the crypto (not so easy), domains are cheap but expires to avoid squating.
+  * [NameCoin](https://www.namecoin.org/) blockchain for DNS that solves [Zuko's Triangle](https://en.wikipedia.org/wiki/Zooko%27s_triangle) allowing you to have a meaningful name. You have to buy the crypto (not so easy), domains are cheap but expires to avoid squating.
   * [Alfis](https://github.com/Revertron/Alfis) - minimal blockchain without cryptocurrency, capable of sustaining any number of domain names in a bunch of original alternative zones.
-  * [Etherium Name System ETH](https://ens.domains/) - didn't even looked into because the whole Etherium is a scam. See an article from the NameCoin dev [No, Ethereum Name Service is still a clown show](https://yanmaani.github.io/no-ethereum-name-service-is-still-a-clown-show/)
+  * [Etherium Name System ETH](https://ens.domains/) - didn't even look into because the whole Ethereum is a scam. See an article from the NameCoin dev [No, Ethereum Name Service is still a clown show](https://yanmaani.github.io/no-ethereum-name-service-is-still-a-clown-show/)
 
 
 ### Other attempts and research
@@ -204,13 +204,13 @@ This is not a big deal but having interchangable domains is a nice thing to have
 #### Some papers about p2p systems and DHTs for newcomers
 
 * [A Survey and Comparison of Peer-to-Peer Overlay Network Schemes](https://snap.stanford.edu/class/cs224w-readings/lua04p2p.pdf) - a general overview of existing systems
-* [Chord: A Scalable Peer-to-peer Lookup Service for Internet Applications](https://pdos.csail.mit.edu/papers/chord:sigcomm01/chord_sigcomm.pdf) -a prtocol and algorythm of DHT
+* [Chord: A Scalable Peer-to-peer Lookup Service for Internet Applications](https://pdos.csail.mit.edu/papers/chord:sigcomm01/chord_sigcomm.pdf) -a protocol and algorithm of DHT
 * [Pastry: Scalable, decentralized object location and routing for large-scale peer-to-peer systems](https://www.cs.cornell.edu/people/egs/615/pastry.pdf) - an overlay network and DHT
 * [Tapestry: An infrastructure for fault-tolerant wide-area location and routing](https://people.cs.uchicago.edu/~ravenben/publications/CSD-01-1141.pdf) - overlay network and DHT
-* [Kademlia: A Peer-to-Peer Information System Based on the XOR Metric](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) - the most known and stable DHT implementaton
+* [Kademlia: A Peer-to-Peer Information System Based on the XOR Metric](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) - the most known and stable DHT implementation
 * [BitTorrent Whitepaper](https://www.bittorrent.com/btt/btt-docs/BitTorrent_(BTT)_White_Paper_v0.8.7_Feb_2019.pdf) - the most accurate description of BitTorrent protocol
-* [Freenet: A Distributed Anonymous Information Storage and Retrieval System](http://snap.stanford.edu/class/cs224w-readings/clarke00freenet.pdf) - an overlay network that rpvides anonimity to to both content readers and providers
-* [Vivaldi: A Decentralized Network Coordinate System](https://pdos.csail.mit.edu/papers/vivaldi:sigcomm/paper.pdf) - an algorythm that counts network delays to peers
+* [Freenet: A Distributed Anonymous Information Storage and Retrieval System](http://snap.stanford.edu/class/cs224w-readings/clarke00freenet.pdf) - an overlay network that provides anonymity to to both content readers and providers
+* [Vivaldi: A Decentralized Network Coordinate System](https://pdos.csail.mit.edu/papers/vivaldi:sigcomm/paper.pdf) - an algorithm that counts network delays to peers
 * [Tribler: A Social-Based Peer-to-Peer System](https://iptps06.cs.ucsb.edu/papers/Pouw-Tribler06.pdf) - BitTorrent + anonymity
 
 
@@ -259,9 +259,7 @@ Great latency performance!
   – Improve performance with affecting the systems architecture
 - Idea for M.Sc. project: build push-based DNS!
 
-
-I've sent a letter to author where asked for any further research but didn't receive a reply yet.
-Anyway something similar can be implemented for yurt domains internally.
+Something similar can be implemented for yurt domains internally.
 Since we have a single jkl.mn DNS then we can easily track IP changes and yurts can download the DNS updates.
 
 

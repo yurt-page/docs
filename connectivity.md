@@ -1,10 +1,10 @@
 # Connectivity
 Possible connections:
-* Yurt on router and a user connects from local network: we can use http with internal IP e.g. http://192.168.1.1. We may nake some domain like my.jkl.mn that return A record with the private IP
+* Yurt on router and a user connects from local network: we can use http with internal IP e.g. http://192.168.1.1. We may make some domain like my.jkl.mn that return A record with the private IP
 * Yurt on PC, Raspberry etc. and a connects from local network. Now here we would need for some local DNS with a plain name because yurt's IP may be any. Should be not complicated with MDNS but not sure it user's router supports this. We still can use plain HTTP.
 * We need for some reverse proxy or some alternative.
 * Yurt on a router and connect from internet:
-  * Two yurts can talk with each other by plain http or with self signed TLS certs, or even by SSH, on any port and any protocol. We are in a full control here.
+  * Two yurts can talk with each other by plain http or with self-signed TLS certs, or even by SSH, on any port and any protocol. We are in a full control here.
   * But to be opened in browser a Yurt needs for TLS and the TLS certs needs for a domain (DDNS we can give for free).
   * If the yurt's IP is public then we need to use DDNS
   * Some ports may be blocked by ISP e.g. incoming/outgoing 25 for mail. Two yurts may use alternative ports like 2525 as a fallback.
@@ -12,7 +12,7 @@ Possible connections:
     * You may use a tunnel: SSH port forwarding or even VPN based.
     * Use [UDP hole punching](https://en.wikipedia.org/wiki/UDP_hole_punching)
       * Two yurts or a special client can use it. But in a browser only WebRTC can do that.
-      * Some weird workaround. We may make a service to watch Yurt from a browser: use WebRTC as transport and make a HTTP-to-WebRTC proxy. We can then show a Yurt in IFRAME from jkl.mn
+      * Some weird workaround. We may make a service to watch Yurt from a browser: use WebRTC as transport and make an HTTP-to-WebRTC proxy. We can then show a Yurt in IFRAME from jkl.mn
     
 
 Connectivity is a problem even bigger than hosting devices.
@@ -23,8 +23,8 @@ Many ISPs give a dynamic IP that is changing from time to time. So you can't reg
 
 If your web server doesn't have a public or dynamic IP address e.g. behind CGNAT then it can't be accessed from internet.
 You may try NAT punching. See [How NAT traversal works](https://tailscale.com/blog/how-nat-traversal-works/).
-But it will work only for UDP. The WebRTC does this but it's too heavy for routers.
-It is posible to build a proxy from WebRTC to plain HTTP so that we don't need to rewrite the entire system.
+But it will work only for UDP. The WebRTC does this, but it's too heavy for routers.
+It is possible to build a proxy from WebRTC to plain HTTP so that we don't need to rewrite the entire system.
 Anyway you won't be able to simply connect to a yurt, only two yurts can talk with each other.
 The HTTP3 is UDP based so maybe it's possible to open directly in browser.
 
@@ -53,13 +53,13 @@ So such tunneling services uses protocols like port forward over SSH or speciali
 Tor provides free to use Hidden Services (Onion Service) which will be proxied with 6 proxies: 3 from a client side and 3 to your site.
 This makes it very slow. There is a Single Onion Service if you don't care about hiding your service location. Then you'll have 4 hops.
 https://community.torproject.org/onion-services/overview/
-A client also needs for Tor installed but also onion domains aren't human readable.
+A client also needs for Tor installed but also onion domains aren't human-readable.
 Still, this is a good option if you need to connect two yurts because the Tor is forever for free and stable.
 
 **UPD** I added luci-app-tor so now users can configure an Onion Service from GUI.
 
 ## SSH tunnel
-The OpenWrt's Dropbear ssh (dbclient) supports the port forwarding. But they are slow. OpenWrt has a sshtunnel package to reconnect but it depends on OpenSSH client.
+The OpenWrt's Dropbear ssh (dbclient) supports the port forwarding. But they are slow. OpenWrt has a sshtunnel package to reconnect, but it depends on OpenSSH client.
 I partially fixed this https://github.com/openwrt/packages/pull/21263
 
 See https://openwrt.org/docs/guide-user/services/ssh/sshtunnel
@@ -69,11 +69,11 @@ See https://openwrt.org/docs/guide-user/services/ssh/sshtunnel
 See [Awesome Tunneling](https://github.com/anderspitman/awesome-tunneling)
 
 Most interesting are:
-* [pagekite](https://pagekite.net/home/) Uses HTTP proxy like protocol with an additional encryption. One of the oldest. Has openwrt package and Luci app. Allows to deploy own server instance (called frontend). See [PageKite intro](https://www.youtube.com/watch?v=SRhK05KjxYA) and [Accessing your Mbed device from anywhere using Pagekite How to create a Mbed library for Pagekite](https://www.youtube.com/watch?v=23BS7kdQMzw). Paid plain is quite expensive.
-* [CloudFlare](https://www.cloudflare.com/products/tunnel/) has a free plan but it's too havy for most routers.
+* [Pagekite](https://pagekite.net/home/) Uses HTTP proxy like protocol with an additional encryption. One of the oldest. Has openwrt package and Luci app. Allows to deploy own server instance (called frontend). See [PageKite intro](https://www.youtube.com/watch?v=SRhK05KjxYA) and [Accessing your Mbed device from anywhere using Pagekite How to create a Mbed library for Pagekite](https://www.youtube.com/watch?v=23BS7kdQMzw). Paid plain is quite expensive.
+* [CloudFlare](https://www.cloudflare.com/products/tunnel/) has a free plan, but it's too heavy for most routers.
 * [localhost.run](https://localhost.run/) SSH tunnel. The server side is not FOSS. Here is some details about internals https://medium.com/localhost-run/localhost-run-the-origin-story-5aeaf5692dee. Paid plain is quite expensive and free plan doesn't allow for stable domain.
-* https://git.sequentialread.com/sqr/greenhouse  https://greenhouse-alpha.server.garden/ TCP reverse tunnel in NodeJS. Free to use and the server side is FOSS
-* https://telebit.cloud/ written in NodeJs
+* https://git.sequentialread.com/sqr/greenhouse  https://greenhouse-alpha.server.garden/ TCP reverse tunnel in Node.js. Free to use and the server side is FOSS
+* https://telebit.cloud/ written in Node.js
 * https://github.com/azimjohn/jprq ngrok alternative using WebSockets.
 * https://github.com/antoniomika/sish open source serveo/ngrok service alternative for SSH tunnels.
 
@@ -89,8 +89,8 @@ This may be a good ready to go option that will cost almost noting to implement.
 ## UPnP and NATPMP/PCP
 * See https://forum.openwrt.org/t/port-control-protocol-support/114411/17
 * https://launchpad.net/upnp-router-control a GUI to open a port but for UPnP only.
-* natpmpc a small utility that allows to open a port with NATPMP (PCP?)
-* upnpc - miniupnpc library test client.
+* `natpmpc` a small utility that allows to open a port with NATPMP (PCP?)
+* `upnpc` - miniupnpc` library test client.
 * https://github.com/rofl0r/nat-tunnel
 
 ## IoT
