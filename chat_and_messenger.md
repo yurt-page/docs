@@ -54,6 +54,17 @@ But it also can be useful in a natural way. For example, I'm using different mes
 * Skype to talk with recruiters when I'm searching for a job. Other time I'm using it to talk with parents: historically that was a first messenger that we started to use for calls.
 * MS Teams, Flock, Slack or even Discord for a corporate job discussions.
 
+<details>
+<summary>how I end up...</summary>
+ I found it's better to use different apps:
+1. For business chats and to receive SMS, I use Viber. I have disabled notifications for it.
+2. For talking with parents, historically we end up in the Viber too, and somehow even old people can use it.
+3. Telegram is the main messenger. It's fast and has the best UI... but generally I also avoid it and use it with two different profiles: one for personal chat with friends (mostly encrypted) and another to read channels or short talks with random people. The channels steal attention, but some of them are too good not to read them. Actually, I also have another profile of my child for parental control, so I can read all the talk and protect them. But sometimes when someone calls, I receive the call and can't disable it (maybe I have to look better).
+4. Open source XMPP protocol: I use Conversations and its fork Monocles Chat on a tablet. This is a chat to talk with my wife and kids. Unfortunately, it's bad: inconvenient and bad for connectivity. I'm using the converations.im (Germany), and experimented with a self-hosted Prosody server on a router, but anyway, I need a Turn server for calls. My wife doesn't use it because she is in TG most of the time, but when I need to call her urgently, then I use it. I made it on her phone to always ring even when in DND mode. Similarly, my parents switched back to Viber or just a phone call. So this is not a working solution (at least for now) but this is the only safe way.
+
+Alternatives are: WhatsUp (popular, bad UI), Signal (unpopular, average UI, slower), and the open source Matrix protocol with Element (good UI, very slow) and Snikket (advanced XMPP, selfhosted). Nextcloud Talk (selhosted but also many providers like Monocles.eu) and if you are a psycho or simply don't need calls, you may try IRC (ngircd on a router + Revolution IRC)
+</details>
+
 ## Own messenger
 So for my family and friends I need my own messenger with a server. I need a server for a file storage, End-to-End (E2E) encryption and ideally ability to work on local network in serverless mode. It doesn't make sense to use Tox over Tot network to talk with my wife in another room. Privacy can be relaxed, and it's ok to have a metadata leak and use direct p2p connections. 
 And here we have not so many options:
